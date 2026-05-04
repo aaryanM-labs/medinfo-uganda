@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Diseases — MedInfo Uganda</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+      <div class="nav-logo">Med<span>Info</span> Uganda</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="diseases.html" class="active">Diseases</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+      <h1>All Diseases</h1>
+      <p>Browse all conditions in our database. Click any disease to see full details.</p>
+      <div class="disease-count" id="disease-count"></div>
+    </section>
+
+    <!-- FILTER BAR -->
+    <section class="filter-section">
+      <input 
+        type="text" 
+        id="filter-input" 
+        placeholder="Filter by disease name..."
+      />
+      <div class="urgency-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="high">Emergency</button>
+        <button class="filter-btn" data-filter="medium">See clinic</button>
+        <button class="filter-btn" data-filter="low">Manageable</button>
+      </div>
+    </section>
+
+    <!-- DISEASES GRID -->
+    <section class="diseases-grid-section">
+      <div class="diseases-grid" id="diseases-grid">
+        <!-- JavaScript fills this -->
+      </div>
+    </section>
+
+    <!-- DISEASE MODAL -->
+    <div class="modal-overlay" id="modal-overlay">
+      <div class="modal" id="modal">
+        <button class="modal-close" id="modal-close">✕</button>
+        <div class="modal-content" id="modal-content"></div>
+      </div>
+    </div>
+
+    <!-- DISCLAIMER -->
+    <footer class="disclaimer">
+      <p>
+        This tool provides health information only. 
+        It is not a substitute for professional medical advice. 
+        Always consult a qualified health worker for diagnosis and treatment.
+      </p>
+    </footer>
+
+    <script src="js/diseases.js"></script>
+  </body>
+</html>
