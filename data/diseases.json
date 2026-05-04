@@ -1,0 +1,327 @@
+[
+  {
+    "name": "Malaria",
+    "symptoms": ["fever", "headache", "chills", "sweating", "vomiting", "fatigue", "muscle pain", "shivering"],
+    "description": "A parasitic disease caused by Plasmodium parasites, spread through bites of infected female Anopheles mosquitoes. One of the leading causes of illness and death in Uganda.",
+    "spreads": "Through bites of infected female Anopheles mosquitoes. Not spread person to person.",
+    "prevention": [
+      "Sleep under an insecticide-treated mosquito net every night",
+      "Use mosquito repellent on exposed skin especially at dusk and dawn",
+      "Eliminate standing water around your home where mosquitoes breed"
+    ],
+    "urgency": "high",
+    "urgency_reason": "Malaria can become fatal within 24 hours if untreated. Go to a health facility immediately."
+  },
+  {
+    "name": "Typhoid Fever",
+    "symptoms": ["fever", "headache", "stomach pain", "weakness", "loss of appetite", "constipation", "diarrhoea", "rash"],
+    "description": "A bacterial infection caused by Salmonella typhi, spread through contaminated food and water. Very common in areas with poor sanitation.",
+    "spreads": "Through eating or drinking food and water contaminated with the faeces of an infected person.",
+    "prevention": [
+      "Drink only boiled or treated water",
+      "Wash hands thoroughly with soap before eating and after using the toilet",
+      "Avoid eating street food that may be contaminated"
+    ],
+    "urgency": "medium",
+    "urgency_reason": "See a clinic within 24 hours. Typhoid requires antibiotic treatment and worsens without it."
+  },
+  {
+    "name": "Cholera",
+    "symptoms": ["diarrhoea", "vomiting", "dehydration", "muscle cramps", "weakness", "dry mouth", "rapid heart rate"],
+    "description": "A severe bacterial infection of the intestine caused by Vibrio cholerae. Causes extreme watery diarrhoea that leads to dangerous dehydration very quickly.",
+    "spreads": "Through contaminated water and food. Spreads rapidly in areas without clean water and proper sanitation.",
+    "prevention": [
+      "Only drink water that has been boiled or treated with chlorine",
+      "Wash hands with soap and clean water before handling food",
+      "Cook food thoroughly and eat it while still hot"
+    ],
+    "urgency": "high",
+    "urgency_reason": "Cholera can kill within hours through dehydration. Go to hospital immediately."
+  },
+  {
+    "name": "Tuberculosis",
+    "symptoms": ["cough", "chest pain", "coughing blood", "fatigue", "weight loss", "fever", "night sweats", "loss of appetite"],
+    "description": "A bacterial infection caused by Mycobacterium tuberculosis that mainly affects the lungs. Uganda has one of the highest TB burdens in Africa.",
+    "spreads": "Through the air when an infected person coughs, sneezes or speaks. Prolonged close contact is usually needed.",
+    "prevention": [
+      "Ensure good ventilation in your home and workplace",
+      "Cover your mouth and nose when coughing or sneezing",
+      "Get the BCG vaccine which protects children against severe TB"
+    ],
+    "urgency": "medium",
+    "urgency_reason": "TB is curable but requires a full 6 month course of antibiotics. See a clinic for a TB test."
+  },
+  {
+    "name": "HIV/AIDS",
+    "symptoms": ["fever", "fatigue", "rash", "swollen lymph nodes", "sore throat", "muscle pain", "headache", "weight loss"],
+    "description": "A viral infection caused by the Human Immunodeficiency Virus that attacks the immune system. Uganda has made major progress in treatment but new infections still occur.",
+    "spreads": "Through unprotected sexual contact, sharing needles, blood transfusion, or from mother to child during birth or breastfeeding.",
+    "prevention": [
+      "Use condoms consistently during sexual intercourse",
+      "Get tested regularly especially if sexually active",
+      "Never share needles or sharp instruments"
+    ],
+    "urgency": "medium",
+    "urgency_reason": "HIV is manageable with antiretroviral therapy. Visit a health centre for a confidential test."
+  },
+  {
+    "name": "Bilharzia (Schistosomiasis)",
+    "symptoms": ["abdominal pain", "diarrhea", "bloody stool", "bloody urine", "fever", "fatigue"],
+    "description": "A disease caused by parasitic worms that live in fresh water. It is common in fishing communities and areas near lakes or rivers.",
+    "spreads": "Through skin contact with contaminated fresh water where certain types of snails live.",
+    "prevention": [
+      "Avoid swimming or wading in fresh water known to be contaminated",
+      "Boil water for bathing or let it stand for 2 days before use",
+      "Use improved latrines to prevent water contamination"
+    ],
+    "urgency": "medium",
+    "urgency_reason": "Chronic infection can lead to liver damage, kidney failure, or infertility if left untreated over time."
+  },
+  {
+    "name": "Sleeping Sickness (Human African Trypanosomiasis)",
+    "symptoms": ["fever", "severe headache", "swollen lymph nodes", "joint pain", "daytime sleepiness", "nighttime insomnia"],
+    "description": "A parasitic disease transmitted by the tsetse fly. If untreated, it eventually invades the central nervous system.",
+    "spreads": "Through the bite of an infected tsetse fly.",
+    "prevention": [
+      "Wear long-sleeved clothing of medium-weight material in neutral colors",
+      "Use insect repellent",
+      "Avoid bushes or areas where tsetse flies are known to breed"
+    ],
+    "urgency": "high",
+    "urgency_reason": "The disease is almost always fatal without treatment as it eventually attacks the brain."
+  },
+  {
+    "name": "Measles",
+    "symptoms": ["high fever", "cough", "runny nose", "red watery eyes", "tiny white spots inside the mouth", "generalized skin rash"],
+    "description": "A highly contagious viral disease that remains a significant cause of death among young children.",
+    "spreads": "Airborne droplets through coughing, sneezing, or close personal contact.",
+    "prevention": [
+      "Ensure children receive two doses of the measles vaccine",
+      "Isolate infected individuals to prevent community spread",
+      "Practice good respiratory hygiene"
+    ],
+    "urgency": "high",
+    "urgency_reason": "Measles can lead to severe complications like pneumonia, brain swelling (encephalitis), and blindness."
+  },
+  {
+    "name": "Meningitis",
+    "symptoms": ["sudden high fever", "stiff neck", "severe headache", "nausea", "confusion", "sensitivity to light"],
+    "description": "An inflammation of the protective membranes covering the brain and spinal cord, often caused by bacterial or viral infection.",
+    "spreads": "Direct contact, including sneezing, coughing, or sharing utensils with an infected person.",
+    "prevention": [
+      "Get vaccinated against meningococcal and pneumococcal bacteria",
+      "Wash hands frequently",
+      "Avoid sharing drinks or food with sick individuals"
+    ],
+    "urgency": "critical",
+    "urgency_reason": "Bacterial meningitis can be fatal within hours. Immediate medical attention is required."
+  },
+  {
+    "name": "Rabies",
+    "symptoms": ["fever", "headache", "excessive salivation", "muscle spasms", "paralysis", "fear of water (hydrophobia)"],
+    "description": "A viral disease of the central nervous system usually transmitted through the bite of an infected animal.",
+    "spreads": "Through the saliva of infected animals, usually via bites or scratches (most commonly dogs).",
+    "prevention": [
+      "Vaccinate pets (dogs and cats) annually",
+      "Avoid contact with wild or stray animals",
+      "Wash any bite wound immediately with soap and water for 15 minutes"
+    ],
+    "urgency": "critical",
+    "urgency_reason": "Once clinical symptoms appear, rabies is 100% fatal. Post-exposure vaccination must start immediately after a bite."
+  },
+  {
+    "name": "Hepatitis B",
+    "symptoms": ["yellowing of skin/eyes (jaundice)", "dark urine", "extreme fatigue", "nausea", "abdominal pain"],
+    "description": "A viral infection that attacks the liver and can cause both acute and chronic disease.",
+    "spreads": "Contact with blood or other body fluids of an infected person; mother to child at birth.",
+    "prevention": [
+      "Receive the Hepatitis B vaccine series",
+      "Avoid sharing needles, razors, or toothbrushes",
+      "Practice safe sex and ensure sterile medical/tattoo equipment"
+    ],
+    "urgency": "medium",
+    "urgency_reason": "While often asymptomatic early on, it can lead to cirrhosis and liver cancer if unmonitored."
+  },
+  {
+    "name": "Brucellosis",
+    "symptoms": ["fever", "sweating", "malaise", "anorexia", "headache", "pain in muscles/joints"],
+    "description": "A bacterial disease that spreads from animals to humans, often known as 'Malta fever'.",
+    "spreads": "Eating contaminated food (unpasteurized milk/cheese) or direct contact with infected animal fluids.",
+    "prevention": [
+      "Pasteurize all dairy products before consumption",
+      "Cook meat thoroughly",
+      "Wear protective gear when handling livestock or animal carcasses"
+    ],
+    "urgency": "medium",
+    "urgency_reason": "Can cause long-term complications like arthritis or swelling of the heart and liver if not treated with antibiotics."
+  },
+  {
+    "name": "Pneumonia",
+    "symptoms": ["chest pain when breathing", "cough with phlegm", "fatigue", "fever", "shortness of breath"],
+    "description": "An infection that inflames the air sacs in one or both lungs, which may fill with fluid.",
+    "spreads": "Inhaling respiratory droplets from coughs or sneezes of an infected person.",
+    "prevention": [
+      "Vaccination (PCV and Flu vaccines)",
+      "Frequent handwashing",
+      "Reducing indoor air pollution (like wood smoke)"
+    ],
+    "urgency": "high",
+    "urgency_reason": "Can lead to respiratory failure and is a leading cause of death in children under 5."
+  },
+  {
+    "name": "Dengue Fever",
+    "symptoms": ["severe headache", "pain behind the eyes", "muscle and joint pain", "nausea", "rash"],
+    "description": "A mosquito-borne viral infection causing a severe flu-like illness.",
+    "spreads": "Bites of infected Aedes aegypti mosquitoes.",
+    "prevention": [
+      "Use mosquito repellent",
+      "Wear long-sleeved clothing",
+      "Empty containers of standing water to prevent mosquito breeding"
+    ],
+    "urgency": "high",
+    "urgency_reason": "Can progress to Severe Dengue (hemorrhagic fever), which causes internal bleeding and shock."
+  },
+  {
+    "name": "Dysentery",
+    "symptoms": ["bloody diarrhea", "stomach cramps", "fever", "nausea", "painful urge to pass stool"],
+    "description": "An intestinal inflammation, primarily of the colon, that can be caused by bacteria (Shigella) or amoebas.",
+    "spreads": "Fecal-oral route through contaminated food, water, or dirty hands.",
+    "prevention": [
+      "Wash hands with soap after using the toilet and before eating",
+      "Drink safe, treated, or boiled water",
+      "Ensure food is cooked and handled hygienically"
+    ],
+    "urgency": "high",
+    "urgency_reason": "Rapid dehydration and bloodstream infections can be life-threatening, especially for children."
+  },
+  {
+    "name": "Rift Valley Fever (RVF)",
+    "symptoms": ["fever", "weakness", "back pain", "dizziness", "extreme sensitivity to light"],
+    "description": "A viral zoonosis that primarily affects animals but can also infect humans.",
+    "spreads": "Contact with blood or organs of infected animals; occasionally through mosquito bites.",
+    "prevention": [
+      "Wear gloves and protective gear when handling sick animals",
+      "Avoid consuming raw milk or undercooked meat from livestock",
+      "Use mosquito nets and repellent"
+    ],
+    "urgency": "high",
+    "urgency_reason": "A small percentage of cases develop into severe disease involving eye lesions, encephalitis, or hemorrhagic fever."
+  },
+  {
+    "name": "Sickle Cell Crisis",
+    "symptoms": ["severe pain in bones/joints", "shortness of breath", "extreme fatigue", "pale skin"],
+    "description": "A painful episode that occurs when sickle-shaped red blood cells block blood flow to organs.",
+    "spreads": "Genetic; inherited from parents. Not infectious.",
+    "prevention": [
+      "Stay hydrated and avoid extreme temperatures",
+      "Attend regular medical checkups and take prescribed folic acid",
+      "Prevent infections through vaccination and hygiene"
+    ],
+    "urgency": "high",
+    "urgency_reason": "Can lead to organ damage, stroke, or severe anemia requiring urgent blood transfusion."
+  },
+  {
+    "name": "Severe Malnutrition",
+    "symptoms": ["swollen legs/belly (edema)", "extreme thinness", "dry skin", "thinning hair", "lethargy", "irritability"],
+    "description": "A condition where the body does not get enough nutrients to function, often seen as Marasmus or Kwashiorkor.",
+    "spreads": "Not infectious; caused by inadequate diet or repeated infections.",
+    "prevention": [
+      "Exclusive breastfeeding for the first 6 months",
+      "Diverse diet including proteins, vitamins, and minerals",
+      "Regular growth monitoring and deworming for children"
+    ],
+    "urgency": "high",
+    "urgency_reason": "Weakens the immune system making common infections fatal; can cause permanent physical and mental stunting."
+  },
+  {
+    "name": "Hypertension Crisis",
+    "symptoms": ["severe chest pain", "severe headache", "confusion", "blurred vision", "nausea", "shortness of breath"],
+    "description": "A severe increase in blood pressure that can lead to a stroke or heart attack.",
+    "spreads": "Non-communicable; related to genetics and lifestyle.",
+    "prevention": [
+      "Reduce salt intake",
+      "Regular exercise and maintaining a healthy weight",
+      "Take prescribed blood pressure medication consistently"
+    ],
+    "urgency": "critical",
+    "urgency_reason": "Can cause immediate organ failure, stroke, or heart attack. Requires emergency medical care."
+  },
+  {
+    "name": "Snake Bite",
+    "symptoms": ["puncture marks", "severe pain/swelling", "bleeding", "blurred vision", "difficulty breathing"],
+    "description": "An injury caused by a bite from a snake, which may or may not involve venom (envenomation).",
+    "spreads": "Direct contact with a snake.",
+    "prevention": [
+      "Wear boots and long trousers when walking in tall grass",
+      "Use a torch at night",
+      "Keep homes and compounds clear of debris and rodents"
+    ],
+    "urgency": "critical",
+    "urgency_reason": "Venom can cause rapid paralysis, tissue death, or internal bleeding. Seek antivenom immediately."
+  },
+  {
+    "name": "COVID-19",
+    "symptoms": ["fever", "dry cough", "fatigue", "loss of taste or smell", "difficulty breathing"],
+    "description": "An infectious disease caused by the SARS-CoV-2 virus.",
+    "spreads": "Respiratory droplets and small particles when an infected person coughs, sneezes, or talks.",
+    "prevention": [
+      "Get vaccinated and boosted",
+      "Wear a mask in crowded indoor spaces",
+      "Maintain social distancing and wash hands frequently"
+    ],
+    "urgency": "high",
+    "urgency_reason": "Can cause severe respiratory distress and long-term health complications."
+  },
+  {
+    "name": "Ringworm",
+    "symptoms": ["scaly ring-shaped rash", "itching", "redness", "hair loss on the scalp"],
+    "description": "A common fungal skin infection; it is not actually caused by a worm.",
+    "spreads": "Skin-to-skin contact with an infected person or animal, or touching contaminated objects.",
+    "prevention": [
+      "Keep skin clean and dry",
+      "Avoid sharing towels, clothing, or hairbrushes",
+      "Wear shoes in public locker rooms or showers"
+    ],
+    "urgency": "low",
+    "urgency_reason": "Uncomfortable and contagious, but rarely dangerous to overall health."
+  },
+  {
+    "name": "Scabies",
+    "symptoms": ["intense itching (worse at night)", "pimple-like skin rash", "tiny burrows on the skin"],
+    "description": "An itchy skin condition caused by a tiny burrowing mite called Sarcoptes scabiei.",
+    "spreads": "Direct, prolonged, skin-to-skin contact with an infected person.",
+    "prevention": [
+      "Avoid direct contact with infected individuals",
+      "Wash bedding and clothing of infected persons in hot water",
+      "Treat all household members simultaneously if one person is infected"
+    ],
+    "urgency": "medium",
+    "urgency_reason": "Intense scratching can lead to secondary bacterial skin infections like impetigo."
+  },
+  {
+    "name": "Conjunctivitis (Pink Eye)",
+    "symptoms": ["redness in the white of the eye", "increased tearing", "yellow/green discharge", "itchy eyes"],
+    "description": "Inflammation or infection of the transparent membrane that lines the eyelid and covers the eyeball.",
+    "spreads": "Direct contact with eye secretions or contaminated hands/surfaces.",
+    "prevention": [
+      "Wash hands frequently",
+      "Avoid touching or rubbing the eyes",
+      "Do not share towels or eye makeup"
+    ],
+    "urgency": "low",
+    "urgency_reason": "Highly contagious but usually resolves without permanent eye damage if managed."
+  },
+  {
+    "name": "Whooping Cough (Pertussis)",
+    "symptoms": ["severe coughing fits", "high-pitched 'whoop' sound on inhalation", "vomiting after coughing", "exhaustion"],
+    "description": "A highly contagious respiratory tract infection caused by bacteria.",
+    "spreads": "Respiratory droplets from coughing or sneezing.",
+    "prevention": [
+      "Vaccinate infants with the DTP/Pentavalent vaccine",
+      "Ensure boosters for older children and adults",
+      "Keep infected persons away from infants"
+    ],
+    "urgency": "high",
+    "urgency_reason": "Can be life-threatening for infants who may stop breathing (apnea) during coughing spells."
+  }
+]

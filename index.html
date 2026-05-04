@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MedInfo Uganda</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+      <div class="nav-logo">Med<span>Info</span> Uganda</div>
+      <ul class="nav-links">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Diseases</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <h1>What symptoms do you have?</h1>
+      <p class="hero-sub">
+        Type your symptoms below to find information about illnesses 
+        common in Uganda and what to do about them.
+      </p>
+
+      <div class="search-container">
+        <input 
+          type="text" 
+          id="symptom-input" 
+          placeholder="e.g. fever, headache, chills..."
+        />
+        <button id="search-btn">Search</button>
+      </div>
+
+      <div class="quick-tags">
+        <span class="tag-label">Common symptoms:</span>
+        <button class="symptom-tag">Fever</button>
+        <button class="symptom-tag">Headache</button>
+        <button class="symptom-tag">Chills</button>
+        <button class="symptom-tag">Vomiting</button>
+        <button class="symptom-tag">Diarrhoea</button>
+        <button class="symptom-tag">Cough</button>
+        <button class="symptom-tag">Fatigue</button>
+        <button class="symptom-tag">Rash</button>
+      </div>
+    </section>
+
+    <!-- RESULTS SECTION -->
+    <section class="results" id="results-section">
+      <h2>Results</h2>
+      <div id="results-container">
+        <!-- JavaScript will put results here -->
+      </div>
+    </section>
+
+    <!-- DISCLAIMER -->
+    <footer class="disclaimer">
+      <p>
+        This tool provides health information only. 
+        It is not a substitute for professional medical advice. 
+        Always consult a qualified health worker for diagnosis and treatment.
+      </p>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
