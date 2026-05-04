@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About — MedInfo Uganda</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+      <div class="nav-logo">Med<span>Info</span> Uganda</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="diseases.html">Diseases</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+      </ul>
+    </nav>
+
+    <!-- ABOUT HERO -->
+    <section class="about-hero">
+      <div class="about-hero-inner">
+        <div class="about-tag">About this project</div>
+        <h1>Built by a student.<br/>Designed for Uganda.</h1>
+        <p class="about-intro">
+          Most online symptom checkers are designed for Western countries, 
+          listing conditions that rarely exist in Uganda while missing the 
+          diseases that actually affect people here every day.
+        </p>
+      </div>
+    </section>
+
+    <!-- STORY SECTION -->
+    <section class="about-section">
+      <div class="about-grid">
+
+        <div class="about-card">
+          <div class="about-card-icon">🎯</div>
+          <h3>The Problem</h3>
+          <p>
+            When someone in Uganda searches their symptoms online, they get 
+            results built for patients in the UK or USA. Diseases like malaria, 
+            typhoid, bilharzia, and sleeping sickness are either missing or 
+            buried. People make wrong decisions because the tools available 
+            do not reflect their reality.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <div class="about-card-icon">💡</div>
+          <h3>The Solution</h3>
+          <p>
+            MedInfo Uganda is a symptom awareness tool built specifically 
+            around diseases common in Uganda. Every condition in the database 
+            was researched and written using biology knowledge — not copied 
+            from generic sources. The science knowledge is the product. 
+            The code is the delivery mechanism.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <div class="about-card-icon">🔬</div>
+          <h3>What I Learned</h3>
+          <p>
+            The hardest part of building this was not the code — it was the 
+            biology. Any programmer can build a search function. But accurately 
+            distinguishing how malaria presents clinically versus typhoid or 
+            meningitis requires scientific understanding. This project showed 
+            me that bioinformatics — combining biology with technology — is 
+            where I want to build my career.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- BUILDER SECTION -->
+    <section class="about-builder">
+      <div class="about-builder-inner">
+        <h2>Who built this</h2>
+        <p>
+          I am a Biology, Chemistry and Mathematics A-Level student in Uganda 
+          finishing my studies in 2027. I built MedInfo Uganda during my S5 
+          year as a personal project to apply my science knowledge to a real 
+          problem in my community.
+        </p>
+        <p>
+          My goal is to study Bioinformatics at university — using computational 
+          methods to understand diseases at a molecular level and contribute to 
+          research on diagnostics and treatments relevant to Africa.
+        </p>
+        <p>
+          This project is the first step in that direction.
+        </p>
+        <div class="about-links">
+          <a href="https://github.com/aaryanm-labs" target="_blank" class="about-link">
+            GitHub Profile
+          </a>
+          <a href="index.html" class="about-link about-link-primary">
+            Try the tool
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS SECTION -->
+    <section class="about-stats">
+      <div class="stat-item" id="stat-diseases">
+        <div class="stat-number" id="diseases-count">—</div>
+        <div class="stat-label">Diseases in database</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">3</div>
+        <div class="stat-label">Pages</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">1</div>
+        <div class="stat-label">Student builder</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">🇺🇬</div>
+        <div class="stat-label">Built for Uganda</div>
+      </div>
+    </section>
+
+    <!-- DISCLAIMER -->
+    <footer class="disclaimer">
+      <p>
+        This tool provides health information only. 
+        It is not a substitute for professional medical advice. 
+        Always consult a qualified health worker for diagnosis and treatment.
+      </p>
+    </footer>
+
+    <script>
+      // Dynamically show disease count from your real data
+      fetch('data/diseases.json')
+        .then(r => r.json())
+        .then(data => {
+          document.getElementById('diseases-count').textContent = data.length;
+        });
+    </script>
+
+  </body>
+</html>
