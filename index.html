@@ -18,62 +18,164 @@
   <body>
 
     <!-- NAVIGATION -->
-    <nav class="navbar">
-      <div class="nav-logo">Med<span>Info</span> Uganda</div>
-      <ul class="nav-links">
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="diseases.html">Diseases</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
+<nav class="navbar">
+  <div class="nav-logo">Med<span>Info</span> Uganda</div>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="diseases.html">Diseases</a></li>
+    <li><a href="firstaid.html">First Aid</a></li>
+    <li><a href="drugs.html">Drugs</a></li>
+    <li><a href="emergency.html">Emergency</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+  <button class="lang-toggle" id="lang-toggle">🇺🇬 Luganda</button>
+</nav>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
-      <h1>What symptoms do you have?</h1>
-      <p class="hero-sub">
-        Type your symptoms below to find information about illnesses 
-        common in Uganda and what to do about them.
-      </p>
+<!-- HERO -->
+<section class="hero-new">
+  <div class="hero-new-inner">
+    <div class="hero-badge">🇺🇬 Built for Uganda</div>
+    <h1 class="hero-title" id="hero-title">
+      Your Health Questions.<br/>Answered for Uganda.
+    </h1>
+    <p class="hero-desc" id="hero-desc">
+      Search symptoms, find first aid guides, look up medications, 
+      and access emergency contacts — all built around Uganda's 
+      specific health needs.
+    </p>
 
-      <div class="search-container">
-        <input 
-          type="text" 
-          id="symptom-input" 
-          placeholder="e.g. fever, headache, chills..."
-        />
-        <button id="search-btn">Search</button>
-      </div>
+    <div class="search-container">
+      <input 
+        type="text" 
+        id="symptom-input" 
+        placeholder="e.g. fever, headache, chills..."
+      />
+      <button id="search-btn">Search</button>
+    </div>
 
-      <div class="quick-tags">
-        <span class="tag-label">Common symptoms:</span>
-        <button class="symptom-tag">Fever</button>
-        <button class="symptom-tag">Headache</button>
-        <button class="symptom-tag">Chills</button>
-        <button class="symptom-tag">Vomiting</button>
-        <button class="symptom-tag">Diarrhoea</button>
-        <button class="symptom-tag">Cough</button>
-        <button class="symptom-tag">Fatigue</button>
-        <button class="symptom-tag">Rash</button>
-      </div>
-    </section>
+    <div class="quick-tags">
+      <span class="tag-label">Common symptoms:</span>
+      <button class="symptom-tag">Fever</button>
+      <button class="symptom-tag">Headache</button>
+      <button class="symptom-tag">Chills</button>
+      <button class="symptom-tag">Vomiting</button>
+      <button class="symptom-tag">Diarrhoea</button>
+      <button class="symptom-tag">Cough</button>
+      <button class="symptom-tag">Fatigue</button>
+      <button class="symptom-tag">Rash</button>
+    </div>
+  </div>
+</section>
 
-    <!-- RESULTS SECTION -->
-    <section class="results" id="results-section">
-      <h2>Results</h2>
-      <div id="results-container">
-        <!-- JavaScript will put results here -->
-      </div>
-    </section>
+<!-- STATS BAR -->
+<section class="stats-bar">
+  <div class="stat-bar-item">
+    <div class="stat-bar-number" id="stat-diseases">—</div>
+    <div class="stat-bar-label">Diseases</div>
+  </div>
+  <div class="stat-bar-item">
+    <div class="stat-bar-number">10+</div>
+    <div class="stat-bar-label">First Aid Guides</div>
+  </div>
+  <div class="stat-bar-item">
+    <div class="stat-bar-number">20+</div>
+    <div class="stat-bar-label">Medications</div>
+  </div>
+  <div class="stat-bar-item">
+    <div class="stat-bar-number">24/7</div>
+    <div class="stat-bar-label">Free Access</div>
+  </div>
+</section>
 
-    <!-- DISCLAIMER -->
-    <footer class="disclaimer">
-      <p>
-        This tool provides health information only. 
-        It is not a substitute for professional medical advice. 
-        Always consult a qualified health worker for diagnosis and treatment.
-      </p>
-    </footer>
+<!-- QUICK ACTION CARDS -->
+<section class="quick-actions">
+  <h2 class="section-title">What do you need?</h2>
+  <div class="actions-grid">
 
-    <script src="js/app.js"></script>
+   <a href="index.html#results-section" class="action-card">
+  <div class="action-icon icon-green">
+    <svg viewBox="0 0 24 24" fill="none" stroke="#1A6B4A" stroke-width="2">
+      <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+    </svg>
+  </div>
+  <h3>Check Symptoms</h3>
+  <p>Type your symptoms and find matching diseases with urgency advice</p>
+  <span class="action-arrow">Search now →</span>
+</a>
+
+<a href="firstaid.html" class="action-card">
+  <div class="action-icon icon-red">
+    <svg viewBox="0 0 24 24" fill="none" stroke="#DC2626" stroke-width="2">
+      <path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z"/>
+      <path d="M12 8v8M8 12h8"/>
+    </svg>
+  </div>
+  <h3>First Aid</h3>
+  <p>Step by step emergency guides for common accidents and crises</p>
+  <span class="action-arrow">View guides →</span>
+</a>
+
+<a href="drugs.html" class="action-card">
+  <div class="action-icon icon-blue">
+    <svg viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2">
+      <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+    </svg>
+  </div>
+  <h3>Drug Information</h3>
+  <p>Look up common medications, what they treat, and how to use them</p>
+  <span class="action-arrow">Look up drugs →</span>
+</a>
+
+<a href="emergency.html" class="action-card">
+  <div class="action-icon icon-orange">
+    <svg viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.07 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16.92z"/>
+    </svg>
+  </div>
+  <h3>Emergency Contacts</h3>
+  <p>Uganda emergency numbers and health hotlines available 24/7</p>
+  <span class="action-arrow">View contacts →</span>
+</a>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how-it-works">
+  <h2 class="section-title">How it works</h2>
+  <div class="steps-grid">
+    <div class="step">
+      <div class="step-number">1</div>
+      <h3>Enter your symptoms</h3>
+      <p>Type what you are feeling or tap the common symptom buttons</p>
+    </div>
+    <div class="step">
+      <div class="step-number">2</div>
+      <h3>See matching conditions</h3>
+      <p>The tool matches your symptoms to diseases common in Uganda</p>
+    </div>
+    <div class="step">
+      <div class="step-number">3</div>
+      <h3>Know what to do</h3>
+      <p>Get prevention tips and clear advice on when to see a doctor</p>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS SECTION -->
+<section class="results" id="results-section">
+  <h2>Results</h2>
+  <div id="results-container"></div>
+</section>
+
+<!-- DISCLAIMER -->
+<footer class="disclaimer">
+  <p>
+    This tool provides health information only. 
+    It is not a substitute for professional medical advice. 
+    Always consult a qualified health worker for diagnosis and treatment.
+  </p>
+</footer>
+
+<script src="js/app.js"></script>
   </body>
 </html>
