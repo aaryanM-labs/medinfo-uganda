@@ -1,0 +1,162 @@
+[
+  {
+    "id": "choking",
+    "title": "Choking",
+    "category": "Emergency",
+    "summary": "When a person cannot breathe due to an object blocking their airway.",
+    "urgency": "high",
+    "steps": [
+      "Ask the person if they are choking. If they cannot speak, cough or breathe, act immediately.",
+      "Stand behind the person and lean them slightly forward.",
+      "Give 5 firm back blows between the shoulder blades using the heel of your hand.",
+      "If back blows do not work, give 5 abdominal thrusts — place your fist just above the navel and pull sharply inward and upward.",
+      "Alternate between 5 back blows and 5 abdominal thrusts until the object is dislodged or emergency help arrives."
+    ],
+    "warning": "If the person becomes unconscious, call for help immediately and begin CPR.",
+    "do_not": "Do not do blind finger sweeps in the mouth — you may push the object deeper."
+  },
+  {
+    "id": "snake-bite",
+    "title": "Snake Bite",
+    "category": "Emergency",
+    "summary": "Injury caused by a bite from a snake, which may or may not be venomous.",
+    "urgency": "high",
+    "steps": [
+      "Move the person away from the snake's striking distance and keep them calm.",
+      "Remove jewelry or tight clothing near the bite site before swelling starts.",
+      "Keep the bitten limb immobilized and positioned at or below the level of the heart.",
+      "Clean the wound gently with soap and water if possible, then cover with a clean dressing.",
+      "Transport the person to the nearest medical facility immediately for antivenom."
+    ],
+    "warning": "Note the snake's appearance (color and shape) if safe to do so, but do not try to catch it.",
+    "do_not": "Do not use a tourniquet, cut the wound, or attempt to suck out the venom."
+  },
+  {
+    "id": "severe-bleeding",
+    "title": "Severe Bleeding",
+    "category": "Emergency",
+    "summary": "Rapid, heavy loss of blood from a deep wound or major vessel.",
+    "urgency": "high",
+    "steps": [
+      "Call emergency services immediately.",
+      "Put on gloves if available and remove any visible loose debris from the wound.",
+      "Apply firm, direct pressure to the wound using a clean cloth, bandage, or your hands.",
+      "Maintain pressure without stopping until the bleeding slows or help arrives.",
+      "If the dressing becomes soaked, add more layers on top rather than removing the old ones."
+    ],
+    "warning": "Watch for signs of shock, such as pale skin, rapid pulse, or fainting.",
+    "do_not": "Do not remove embedded objects; apply pressure around them instead."
+  },
+  {
+    "id": "burns",
+    "title": "Burns",
+    "category": "Urgent",
+    "summary": "Damage to the skin caused by heat, chemicals, electricity, or radiation.",
+    "urgency": "medium",
+    "steps": [
+      "Stop the burning process by removing the heat source or putting out flames.",
+      "Run cool (not cold) tap water over the burn for at least 10 to 20 minutes.",
+      "Remove restrictive items like rings or watches gently before the area swells.",
+      "Cover the burn loosely with a clean, non-stick bandage or plastic wrap.",
+      "Seek medical attention for large burns, face burns, or charred skin."
+    ],
+    "warning": "Chemical burns require flushing with water for at least 20 minutes.",
+    "do_not": "Do not apply butter, ointments, or ice directly to a serious burn; do not pop blisters."
+  },
+  {
+    "id": "malaria-fever",
+    "title": "Malaria Fever Management at Home",
+    "category": "Medical",
+    "summary": "Initial care for suspected malaria while seeking professional diagnosis.",
+    "urgency": "medium",
+    "steps": [
+      "Monitor the person's temperature using a thermometer.",
+      "Administer paracetamol to reduce high fever as per weight-based dosage.",
+      "Use lukewarm sponge baths to help lower body temperature gradually.",
+      "Encourage the person to drink plenty of fluids (water, ORS, or juice) to prevent dehydration.",
+      "Take the person to a clinic for a blood test and professional diagnosis immediately."
+    ],
+    "warning": "High fever in children can lead to convulsions; seek urgent care if they become lethargic.",
+    "do_not": "Do not start antimalarial medication without a confirmed diagnosis from a healthcare provider."
+  },
+  {
+    "id": "dehydration-diarrhoea",
+    "title": "Dehydration and Diarrhoea",
+    "category": "Medical",
+    "summary": "Loss of body fluids and electrolytes due to frequent watery stools.",
+    "urgency": "medium",
+    "steps": [
+      "Prepare Oral Rehydration Salts (ORS) according to the packet instructions.",
+      "Give small, frequent sips of ORS to the person; for infants, continue breastfeeding.",
+      "Monitor for signs of severe dehydration: sunken eyes, dry mouth, or decreased urination.",
+      "Offer easy-to-digest foods like bananas, rice, or porridge once vomiting stops.",
+      "Seek medical help if symptoms last more than 24 hours or if blood appears in the stool."
+    ],
+    "warning": "Severe dehydration is a medical emergency, especially in infants and the elderly.",
+    "do_not": "Do not give sugary sodas or fruit juices, as these can make diarrhoea worse."
+  },
+  {
+    "id": "seizure",
+    "title": "Seizure / Convulsions",
+    "category": "Emergency",
+    "summary": "Sudden, uncontrolled electrical disturbance in the brain causing physical changes.",
+    "urgency": "high",
+    "steps": [
+      "Ease the person to the floor and clear the area of hard or sharp objects.",
+      "Place something soft, like a folded jacket, under their head.",
+      "Turn the person gently onto their side to keep the airway clear.",
+      "Time the seizure; if it lasts longer than 5 minutes, call emergency services.",
+      "Stay with the person until they are fully awake and alert."
+    ],
+    "warning": "Do not leave the person alone until they have completely recovered.",
+    "do_not": "Do not restrain the person or put anything in their mouth, including your fingers."
+  },
+  {
+    "id": "drowning",
+    "title": "Drowning",
+    "category": "Emergency",
+    "summary": "Respiratory impairment from being submerged in liquid.",
+    "urgency": "high",
+    "steps": [
+      "Get the person out of the water safely without endangering yourself.",
+      "Check for breathing and a pulse; if absent, call for help and begin CPR immediately.",
+      "If the person is breathing, place them in the recovery position (on their side).",
+      "Remove wet clothes and cover the person with blankets to prevent hypothermia.",
+      "Ensure the person is evaluated by a doctor, even if they seem to have recovered."
+    ],
+    "warning": "Water in the lungs can cause delayed complications hours after the incident.",
+    "do_not": "Do not attempt a water rescue unless you are a trained swimmer."
+  },
+  {
+    "id": "fracture",
+    "title": "Fracture / Broken Bone",
+    "category": "Urgent",
+    "summary": "A crack or break in a bone, often causing pain, swelling, and deformity.",
+    "urgency": "medium",
+    "steps": [
+      "Stop any bleeding by applying pressure with a clean cloth.",
+      "Immobilize the injured area using a splint or sling; do not try to realign the bone.",
+      "Apply ice packs wrapped in a cloth to reduce swelling and pain.",
+      "Keep the person still and treat for shock if they feel faint or breathe rapidly.",
+      "Seek medical help immediately for an X-ray and proper setting."
+    ],
+    "warning": "If the bone has pierced the skin, treat it as a severe wound and do not wash it.",
+    "do_not": "Do not move the person if you suspect a broken back, neck, or hip unless necessary."
+  },
+  {
+    "id": "unconsciousness",
+    "title": "Loss of Consciousness",
+    "category": "Emergency",
+    "summary": "When a person is unresponsive and appears to be in a deep sleep.",
+    "urgency": "high",
+    "steps": [
+      "Check the person's airway, breathing, and pulse.",
+      "Call emergency services immediately.",
+      "If they are breathing, roll them onto their side into the recovery position.",
+      "Loosen restrictive clothing around the neck and waist.",
+      "If they are not breathing, begin CPR (chest compressions) immediately."
+    ],
+    "warning": "Check for medical alert jewelry that might explain the condition (e.g., Diabetes).",
+    "do_not": "Do not give the person anything to eat or drink while they are unconscious."
+  }
+]
