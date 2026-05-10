@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Aid Guides — MedInfo Uganda</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+      <div class="nav-logo">Med<span>Info</span> Uganda</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="diseases.html">Diseases</a></li>
+        <li><a href="firstaid.html" class="active">First Aid</a></li>
+        <li><a href="drugs.html">Drugs</a></li>
+        <li><a href="emergency.html">Emergency</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+      <h1>First Aid Guides</h1>
+      <p>Step by step emergency guides for common accidents and health crises in Uganda.</p>
+      <div class="disease-count" id="guide-count"></div>
+    </div>
+
+    <!-- FILTER -->
+    <div class="filter-section">
+      <input 
+        type="text" 
+        id="filter-input" 
+        placeholder="Search first aid guides..."
+      />
+      <div class="urgency-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="high">Emergency</button>
+        <button class="filter-btn" data-filter="medium">Urgent</button>
+        <button class="filter-btn" data-filter="low">General</button>
+      </div>
+    </div>
+
+    <!-- GUIDES GRID -->
+    <div class="diseases-grid-section">
+      <div class="diseases-grid" id="guides-grid"></div>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal-overlay" id="modal-overlay">
+      <div class="modal" id="modal">
+        <button class="modal-close" id="modal-close">✕</button>
+        <div class="modal-content" id="modal-content"></div>
+      </div>
+    </div>
+
+    <!-- DISCLAIMER -->
+    <footer class="disclaimer">
+      <p>
+        These guides provide basic first aid information only. 
+        Always call for professional medical help in an emergency. 
+        First aid does not replace professional medical treatment.
+      </p>
+    </footer>
+
+    <script src="js/firstaid.js"></script>
+  </body>
+</html>
