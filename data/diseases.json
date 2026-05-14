@@ -1,7 +1,10 @@
 [
+  [
   {
     "name": "Malaria",
-    "symptoms": ["fever", "headache", "chills", "sweating", "vomiting", "fatigue", "muscle pain", "shivering"],
+    "symptoms": ["Fever", "Chills", "Sweating", "Headache", "Muscle pain", "Fatigue", "Nausea", "Vomiting", "Loss of appetite", "Abdominal pain", "Dizziness", "Fast heartbeat", "Pale skin", "Dark urine", "Confusion"],
+    "differentiating_symptoms": ["Chills", "Sweating", "Dark urine", "Pale skin", "Fast heartbeat"],
+    "similar_to": ["Typhoid Fever", "Meningitis", "Dengue Fever"],
     "description": "A parasitic disease caused by Plasmodium parasites, spread through bites of infected female Anopheles mosquitoes. One of the leading causes of illness and death in Uganda.",
     "spreads": "Through bites of infected female Anopheles mosquitoes. Not spread person to person.",
     "prevention": [
@@ -14,314 +17,362 @@
   },
   {
     "name": "Typhoid Fever",
-    "symptoms": ["fever", "headache", "stomach pain", "weakness", "loss of appetite", "constipation", "diarrhoea", "rash"],
-    "description": "A bacterial infection caused by Salmonella typhi, spread through contaminated food and water. Very common in areas with poor sanitation.",
-    "spreads": "Through eating or drinking food and water contaminated with the faeces of an infected person.",
+    "symptoms": ["Sustained high fever", "Rose spots on chest", "Stomach pain", "Constipation", "Pea-soup diarrhea", "Extreme fatigue", "Headache", "Loss of appetite", "Dry cough", "Muscle weakness", "Swollen abdomen", "Slow heart rate", "Coated tongue", "Enlarged liver", "Intestinal bleeding"],
+    "differentiating_symptoms": ["Rose spots", "Slow heart rate relative to fever", "Coated tongue", "Pea-soup diarrhea"],
+    "similar_to": ["Malaria", "Brucellosis", "Hepatitis B"],
+    "description": "A life-threatening bacterial infection caused by Salmonella Typhi, common in areas with poor sanitation.",
+    "spreads": "Fecal-oral route through contaminated food or water.",
     "prevention": [
-      "Drink only boiled or treated water",
-      "Wash hands thoroughly with soap before eating and after using the toilet",
-      "Avoid eating street food that may be contaminated"
+      "Drink boiled or treated water",
+      "Wash hands with soap after using the toilet",
+      "Eat hot, well-cooked food"
     ],
-    "urgency": "medium",
-    "urgency_reason": "See a clinic within 24 hours. Typhoid requires antibiotic treatment and worsens without it."
+    "urgency": "high",
+    "urgency_reason": "Can cause intestinal perforation or severe internal bleeding if untreated."
   },
   {
     "name": "Cholera",
-    "symptoms": ["diarrhoea", "vomiting", "dehydration", "muscle cramps", "weakness", "dry mouth", "rapid heart rate"],
-    "description": "A severe bacterial infection of the intestine caused by Vibrio cholerae. Causes extreme watery diarrhoea that leads to dangerous dehydration very quickly.",
-    "spreads": "Through contaminated water and food. Spreads rapidly in areas without clean water and proper sanitation.",
+    "symptoms": ["Rice-water stools", "Projectile vomiting", "Rapid dehydration", "Muscle cramps", "Sunken eyes", "Dry mouth", "Extreme thirst", "Loss of skin turgor", "Low blood pressure", "Rapid heart rate", "Decreased urine", "Lethargy", "Cold skin", "Weak pulse", "Electrolyte imbalance"],
+    "differentiating_symptoms": ["Profuse rice-water stools", "Projectile vomiting", "Extremely rapid dehydration"],
+    "similar_to": ["Dysentery", "Severe Food Poisoning"],
+    "description": "An acute diarrheal infection caused by ingestion of food or water contaminated with the bacterium Vibrio cholerae.",
+    "spreads": "Contaminated water sources and poor fecal-waste management.",
     "prevention": [
-      "Only drink water that has been boiled or treated with chlorine",
-      "Wash hands with soap and clean water before handling food",
-      "Cook food thoroughly and eat it while still hot"
+      "Drink safe, treated water",
+      "Practice frequent handwashing with soap",
+      "Cook food thoroughly and peel fruits"
     ],
-    "urgency": "high",
-    "urgency_reason": "Cholera can kill within hours through dehydration. Go to hospital immediately."
+    "urgency": "extreme",
+    "urgency_reason": "Can cause severe dehydration and death within hours if not treated immediately."
   },
   {
-    "name": "Tuberculosis",
-    "symptoms": ["cough", "chest pain", "coughing blood", "fatigue", "weight loss", "fever", "night sweats", "loss of appetite"],
-    "description": "A bacterial infection caused by Mycobacterium tuberculosis that mainly affects the lungs. Uganda has one of the highest TB burdens in Africa.",
-    "spreads": "Through the air when an infected person coughs, sneezes or speaks. Prolonged close contact is usually needed.",
+    "name": "Tuberculosis (TB)",
+    "symptoms": ["Persistent cough (3+ weeks)", "Coughing up blood", "Chest pain", "Night sweats", "Unexplained weight loss", "Fever", "Fatigue", "Loss of appetite", "Shortness of breath", "Chills", "Pale skin", "Swollen lymph nodes", "General malaise", "Weakness", "Dull chest percussion"],
+    "differentiating_symptoms": ["Coughing up blood", "Drenching night sweats", "Cough lasting over 3 weeks"],
+    "similar_to": ["Pneumonia", "Lung Cancer", "HIV-related infections"],
+    "description": "A serious infectious disease that mainly affects the lungs, caused by Mycobacterium tuberculosis bacteria.",
+    "spreads": "Through the air when an infected person coughs, sneezes, or speaks.",
     "prevention": [
-      "Ensure good ventilation in your home and workplace",
-      "Cover your mouth and nose when coughing or sneezing",
-      "Get the BCG vaccine which protects children against severe TB"
+      "BCG vaccination at birth",
+      "Ensure good ventilation in living spaces",
+      "Cover mouth and nose when coughing or sneezing"
     ],
-    "urgency": "medium",
-    "urgency_reason": "TB is curable but requires a full 6 month course of antibiotics. See a clinic for a TB test."
+    "urgency": "high",
+    "urgency_reason": "Highly contagious and can lead to permanent lung damage or death without a full course of antibiotics."
   },
   {
     "name": "HIV/AIDS",
-    "symptoms": ["fever", "fatigue", "rash", "swollen lymph nodes", "sore throat", "muscle pain", "headache", "weight loss"],
-    "description": "A viral infection caused by the Human Immunodeficiency Virus that attacks the immune system. Uganda has made major progress in treatment but new infections still occur.",
-    "spreads": "Through unprotected sexual contact, sharing needles, blood transfusion, or from mother to child during birth or breastfeeding.",
+    "symptoms": ["Rapid weight loss", "Recurring fever", "Profuse night sweats", "Extreme tiredness", "Swollen lymph nodes", "Chronic diarrhea", "Mouth sores", "Pneumonia", "Purple skin blotches", "Memory loss", "Oral candidiasis", "Persistent cough", "Frequent infections", "Neurological disorders", "Chronic skin rashes"],
+    "differentiating_symptoms": ["Unexplained wasting", "Opportunistic infections (e.g. Kaposi's sarcoma)", "Chronic swollen glands"],
+    "similar_to": ["Tuberculosis", "Severe Malnutrition", "Malaria"],
+    "description": "A virus that attacks the body’s immune system (CD4 cells). If untreated, it progresses to AIDS.",
+    "spreads": "Unprotected sexual contact, needle sharing, and from mother to child during birth or breastfeeding.",
     "prevention": [
-      "Use condoms consistently during sexual intercourse",
-      "Get tested regularly especially if sexually active",
-      "Never share needles or sharp instruments"
+      "Consistent and correct use of condoms",
+      "Use of sterile needles and medical equipment",
+      "Taking PrEP or PEP medications if at risk"
     ],
-    "urgency": "medium",
-    "urgency_reason": "HIV is manageable with antiretroviral therapy. Visit a health centre for a confidential test."
+    "urgency": "medium-high",
+    "urgency_reason": "Requires lifelong antiretroviral therapy (ART) to prevent fatal opportunistic infections."
   },
   {
     "name": "Bilharzia (Schistosomiasis)",
-    "symptoms": ["abdominal pain", "diarrhea", "bloody stool", "bloody urine", "fever", "fatigue"],
-    "description": "A disease caused by parasitic worms that live in fresh water. It is common in fishing communities and areas near lakes or rivers.",
-    "spreads": "Through skin contact with contaminated fresh water where certain types of snails live.",
+    "symptoms": ["Itchy skin rash", "Fever", "Chills", "Cough", "Muscle aches", "Blood in urine", "Blood in stool", "Abdominal pain", "Enlarged liver", "Enlarged spleen", "Painful urination", "Diarrhea", "Weight loss", "Fatigue", "Anemia"],
+    "differentiating_symptoms": ["Blood in urine (hematuria)", "Itchy skin after water contact (swimmer's itch)", "Portal hypertension"],
+    "similar_to": ["Malaria", "Dysentery", "Typhoid"],
+    "description": "A disease caused by parasitic worms that live in fresh water snails in tropical regions.",
+    "spreads": "Skin contact with contaminated fresh water (lakes, rivers) containing infected snails.",
     "prevention": [
-      "Avoid swimming or wading in fresh water known to be contaminated",
-      "Boil water for bathing or let it stand for 2 days before use",
-      "Use improved latrines to prevent water contamination"
+      "Avoid swimming or wading in infested fresh water",
+      "Boil or filter water used for bathing",
+      "Use proper latrines to prevent water contamination"
     ],
     "urgency": "medium",
-    "urgency_reason": "Chronic infection can lead to liver damage, kidney failure, or infertility if left untreated over time."
+    "urgency_reason": "Chronic infection can lead to liver failure, bladder cancer, or kidney damage."
   },
   {
-    "name": "Sleeping Sickness (Human African Trypanosomiasis)",
-    "symptoms": ["fever", "severe headache", "swollen lymph nodes", "joint pain", "daytime sleepiness", "nighttime insomnia"],
-    "description": "A parasitic disease transmitted by the tsetse fly. If untreated, it eventually invades the central nervous system.",
-    "spreads": "Through the bite of an infected tsetse fly.",
+    "name": "Sleeping Sickness",
+    "symptoms": ["Painful bite chancre", "Intermittent fever", "Severe headache", "Extreme fatigue", "Swollen neck lymph nodes", "Muscle/joint pain", "Itchy skin", "Personality changes", "Slurred speech", "Confusion", "Daytime sleepiness", "Nighttime insomnia", "Difficulty walking", "Seizures", "Weight loss"],
+    "differentiating_symptoms": ["Winterbottom's sign (swollen neck nodes)", "Inverted sleep cycle", "Extreme lethargy"],
+    "similar_to": ["Meningitis", "Malaria", "Encephalitis"],
+    "description": "African Trypanosomiasis, a parasitic disease transmitted by the tsetse fly in sub-Saharan Africa.",
+    "spreads": "Bites of infected tsetse flies.",
     "prevention": [
-      "Wear long-sleeved clothing of medium-weight material in neutral colors",
-      "Use insect repellent",
-      "Avoid bushes or areas where tsetse flies are known to breed"
+      "Wear long-sleeved clothing in neutral colors",
+      "Use insect repellent in fly-infested areas",
+      "Avoid bushes where tsetse flies rest during the day"
     ],
     "urgency": "high",
-    "urgency_reason": "The disease is almost always fatal without treatment as it eventually attacks the brain."
+    "urgency_reason": "Once the parasite enters the central nervous system, it is fatal without specialized treatment."
   },
   {
     "name": "Measles",
-    "symptoms": ["high fever", "cough", "runny nose", "red watery eyes", "tiny white spots inside the mouth", "generalized skin rash"],
-    "description": "A highly contagious viral disease that remains a significant cause of death among young children.",
-    "spreads": "Airborne droplets through coughing, sneezing, or close personal contact.",
+    "symptoms": ["High fever", "Dry cough", "Runny nose", "Red watery eyes", "Koplik's spots in mouth", "Blotchy skin rash", "Sore throat", "Sensitivity to light", "Sneezing", "General body weakness", "Loss of appetite", "Swollen eyelids", "Diarrhea", "Ear infection", "Vomiting"],
+    "differentiating_symptoms": ["Koplik's spots", "Rash starting at the hairline and spreading down", "Photophobia"],
+    "similar_to": ["Rubella", "Scarlet Fever", "Dengue Fever"],
+    "description": "A highly contagious viral infection that is a major cause of death among young children globally.",
+    "spreads": "Airborne droplets from coughing, sneezing, or breathing.",
     "prevention": [
-      "Ensure children receive two doses of the measles vaccine",
-      "Isolate infected individuals to prevent community spread",
-      "Practice good respiratory hygiene"
+      "Ensure children receive two doses of the MMR vaccine",
+      "Isolate infected persons during the contagious period",
+      "Vitamin A supplementation for infected children"
     ],
-    "urgency": "high",
-    "urgency_reason": "Measles can lead to severe complications like pneumonia, brain swelling (encephalitis), and blindness."
+    "urgency": "medium-high",
+    "urgency_reason": "Can cause severe complications like pneumonia, blindness, or brain swelling (encephalitis)."
   },
   {
     "name": "Meningitis",
-    "symptoms": ["sudden high fever", "stiff neck", "severe headache", "nausea", "confusion", "sensitivity to light"],
-    "description": "An inflammation of the protective membranes covering the brain and spinal cord, often caused by bacterial or viral infection.",
-    "spreads": "Direct contact, including sneezing, coughing, or sharing utensils with an infected person.",
+    "symptoms": ["Sudden high fever", "Stiff neck", "Severe headache", "Nausea", "Vomiting", "Confusion", "Seizures", "Difficulty waking up", "Sensitivity to light", "Skin rash (purple spots)", "Lack of appetite", "Thirst", "Positive Brudzinski's sign", "Positive Kernig's sign", "Bulging fontanelle in infants"],
+    "differentiating_symptoms": ["Neck stiffness (nuchal rigidity)", "Non-blanching purple rash", "Inability to touch chin to chest"],
+    "similar_to": ["Cerebral Malaria", "Rabies", "Severe Flu"],
+    "description": "Inflammation of the protective membranes (meninges) covering the brain and spinal cord.",
+    "spreads": "Exchange of respiratory and throat secretions (kissing, coughing, or sharing utensils).",
     "prevention": [
-      "Get vaccinated against meningococcal and pneumococcal bacteria",
-      "Wash hands frequently",
-      "Avoid sharing drinks or food with sick individuals"
+      "Vaccination against meningococcus, pneumococcus, and Hib",
+      "Maintain good hand hygiene",
+      "Avoid sharing personal items like drinks or cigarettes"
     ],
-    "urgency": "critical",
-    "urgency_reason": "Bacterial meningitis can be fatal within hours. Immediate medical attention is required."
+    "urgency": "extreme",
+    "urgency_reason": "Bacterial meningitis can be fatal within 24 hours or cause permanent brain damage."
   },
   {
     "name": "Rabies",
-    "symptoms": ["fever", "headache", "excessive salivation", "muscle spasms", "paralysis", "fear of water (hydrophobia)"],
-    "description": "A viral disease of the central nervous system usually transmitted through the bite of an infected animal.",
-    "spreads": "Through the saliva of infected animals, usually via bites or scratches (most commonly dogs).",
+    "symptoms": ["Fever", "Headache", "Tingling at bite site", "Fear of water (hydrophobia)", "Fear of air (aerophobia)", "Excessive salivation", "Agitation", "Confusion", "Hallucinations", "Insomnia", "Muscle spasms", "Difficulty swallowing", "Paralysis", "Hyperactivity", "Coma"],
+    "differentiating_symptoms": ["Hydrophobia", "Foaming at the mouth", "Aggressive behavior", "Tingling at the site of an old bite"],
+    "similar_to": ["Meningitis", "Tetanus", "Encephalitis"],
+    "description": "A viral disease most often transmitted through the bite of a rabid animal, usually a dog.",
+    "spreads": "Saliva of an infected animal entering a wound or mucous membranes.",
     "prevention": [
       "Vaccinate pets (dogs and cats) annually",
-      "Avoid contact with wild or stray animals",
-      "Wash any bite wound immediately with soap and water for 15 minutes"
+      "Wash any animal bite wound immediately with soap and water",
+      "Seek Post-Exposure Prophylaxis (PEP) immediately after a bite"
     ],
-    "urgency": "critical",
-    "urgency_reason": "Once clinical symptoms appear, rabies is 100% fatal. Post-exposure vaccination must start immediately after a bite."
-  },
-  {
-    "name": "Hepatitis B",
-    "symptoms": ["yellowing of skin/eyes (jaundice)", "dark urine", "extreme fatigue", "nausea", "abdominal pain"],
-    "description": "A viral infection that attacks the liver and can cause both acute and chronic disease.",
-    "spreads": "Contact with blood or other body fluids of an infected person; mother to child at birth.",
-    "prevention": [
-      "Receive the Hepatitis B vaccine series",
-      "Avoid sharing needles, razors, or toothbrushes",
-      "Practice safe sex and ensure sterile medical/tattoo equipment"
-    ],
-    "urgency": "medium",
-    "urgency_reason": "While often asymptomatic early on, it can lead to cirrhosis and liver cancer if unmonitored."
+    "urgency": "extreme",
+    "urgency_reason": "Once symptoms appear, rabies is 100% fatal. Immediate treatment after exposure is vital."
   },
   {
     "name": "Brucellosis",
-    "symptoms": ["fever", "sweating", "malaise", "anorexia", "headache", "pain in muscles/joints"],
-    "description": "A bacterial disease that spreads from animals to humans, often known as 'Malta fever'.",
-    "spreads": "Eating contaminated food (unpasteurized milk/cheese) or direct contact with infected animal fluids.",
+    "symptoms": ["Undulant fever", "Moldy-smelling sweat", "Joint pain", "Back pain", "Fatigue", "Loss of appetite", "Weight loss", "Headache", "Weakness", "Depression", "Enlarged liver", "Enlarged spleen", "Swollen testicles", "Endocarditis", "Chronic cough"],
+    "differentiating_symptoms": ["Undulant fever (rises and falls over weeks)", "Sweat with a moldy smell", "Chronic joint pain"],
+    "similar_to": ["Typhoid Fever", "Malaria", "Tuberculosis"],
+    "description": "A bacterial infection that spreads from animals to people, often through raw dairy products.",
+    "spreads": "Consuming unpasteurized dairy, undercooked meat, or contact with fluids of infected livestock.",
     "prevention": [
-      "Pasteurize all dairy products before consumption",
+      "Avoid unpasteurized milk and cheese",
       "Cook meat thoroughly",
-      "Wear protective gear when handling livestock or animal carcasses"
+      "Wear gloves and masks when handling farm animals"
     ],
     "urgency": "medium",
-    "urgency_reason": "Can cause long-term complications like arthritis or swelling of the heart and liver if not treated with antibiotics."
+    "urgency_reason": "Can cause long-term complications in the heart, brain, and joints if not treated with specific antibiotics."
+  },
+  {
+    "name": "Hepatitis B",
+    "symptoms": ["Jaundice (yellow eyes/skin)", "Dark urine", "Extreme fatigue", "Nausea", "Vomiting", "Right-side abdominal pain", "Loss of appetite", "Clay-colored stools", "Joint pain", "Low-grade fever", "Itchy skin", "General malaise", "Fluid in abdomen", "Easy bruising", "Spider-like skin veins"],
+    "differentiating_symptoms": ["Yellowing of the whites of the eyes", "Clay-colored stools", "Dark 'cola' colored urine"],
+    "similar_to": ["Malaria", "Yellow Fever", "Typhoid"],
+    "description": "A serious liver infection caused by the Hepatitis B virus (HBV).",
+    "spreads": "Contact with infected blood, semen, or other body fluids; mother to child at birth.",
+    "prevention": [
+      "Get the full series of the Hepatitis B vaccine",
+      "Practice safe sex with condoms",
+      "Avoid sharing needles, razors, or toothbrushes"
+    ],
+    "urgency": "medium",
+    "urgency_reason": "Chronic infection can lead to liver cirrhosis, liver failure, or liver cancer."
   },
   {
     "name": "Pneumonia",
-    "symptoms": ["chest pain when breathing", "cough with phlegm", "fatigue", "fever", "shortness of breath"],
-    "description": "An infection that inflames the air sacs in one or both lungs, which may fill with fluid.",
-    "spreads": "Inhaling respiratory droplets from coughs or sneezes of an infected person.",
+    "symptoms": ["Productive cough (mucus)", "Fever", "Chills", "Shortness of breath", "Sharp chest pain", "Rapid breathing", "Fatigue", "Loss of appetite", "Blue lips or nails", "Nausea", "Confusion (in elderly)", "Sweating", "Muscle aches", "Headache", "Crackling lung sounds"],
+    "differentiating_symptoms": ["Chest pain that worsens with deep breaths", "Productive cough with thick yellow/green mucus", "Crackling sounds in lungs"],
+    "similar_to": ["Tuberculosis", "COVID-19", "Bronchitis"],
+    "description": "An infection that inflames the air sacs in one or both lungs, which may fill with fluid or pus.",
+    "spreads": "Airborne droplets from coughing or sneezing.",
     "prevention": [
-      "Vaccination (PCV and Flu vaccines)",
-      "Frequent handwashing",
-      "Reducing indoor air pollution (like wood smoke)"
+      "Get vaccinated (Pneumococcal and Flu vaccines)",
+      "Practice frequent handwashing",
+      "Avoid smoking, which weakens lung defenses"
     ],
     "urgency": "high",
-    "urgency_reason": "Can lead to respiratory failure and is a leading cause of death in children under 5."
+    "urgency_reason": "Can cause severe respiratory failure and sepsis, especially in children and the elderly."
   },
   {
     "name": "Dengue Fever",
-    "symptoms": ["severe headache", "pain behind the eyes", "muscle and joint pain", "nausea", "rash"],
-    "description": "A mosquito-borne viral infection causing a severe flu-like illness.",
-    "spreads": "Bites of infected Aedes aegypti mosquitoes.",
+    "symptoms": ["Sudden high fever", "Pain behind the eyes", "Severe joint and muscle pain", "Nausea", "Vomiting", "Swollen glands", "Measles-like skin rash", "Nose or gum bleeding", "Fatigue", "Low white blood cell count", "Abdominal pain", "Persistent vomiting", "Rapid breathing", "Plasma leakage", "Severe weakness"],
+    "differentiating_symptoms": ["Breakbone fever (severe bone pain)", "Pain behind the eyes", "Hemorrhagic spots under the skin"],
+    "similar_to": ["Malaria", "Zika Virus", "Chikungunya"],
+    "description": "A mosquito-borne viral infection causing severe flu-like illness, sometimes leading to hemorrhagic fever.",
+    "spreads": "Through the bite of an infected Aedes mosquito.",
     "prevention": [
-      "Use mosquito repellent",
+      "Remove standing water around homes",
       "Wear long-sleeved clothing",
-      "Empty containers of standing water to prevent mosquito breeding"
+      "Use mosquito repellents and window screens"
     ],
     "urgency": "high",
-    "urgency_reason": "Can progress to Severe Dengue (hemorrhagic fever), which causes internal bleeding and shock."
+    "urgency_reason": "Severe Dengue (hemorrhagic) can lead to shock, internal bleeding, and death if not managed."
   },
   {
     "name": "Dysentery",
-    "symptoms": ["bloody diarrhea", "stomach cramps", "fever", "nausea", "painful urge to pass stool"],
-    "description": "An intestinal inflammation, primarily of the colon, that can be caused by bacteria (Shigella) or amoebas.",
-    "spreads": "Fecal-oral route through contaminated food, water, or dirty hands.",
+    "symptoms": ["Bloody diarrhea", "Mucus in stool", "Severe abdominal cramps", "Fever", "Nausea", "Vomiting", "Painful urge to poop (tenesmus)", "Dehydration", "Fatigue", "Loss of appetite", "Weight loss", "Rectal pain", "Rapid heart rate", "Weakness", "Electrolyte imbalance"],
+    "differentiating_symptoms": ["Visible blood and mucus in stool", "Painful straining without stool passage", "Severe intestinal cramping"],
+    "similar_to": ["Cholera", "Typhoid", "Amoebiasis"],
+    "description": "An intestinal inflammation, especially in the colon, that can lead to severe diarrhea with mucus or blood.",
+    "spreads": "Fecal-oral route through contaminated food, water, or poor hand hygiene.",
     "prevention": [
-      "Wash hands with soap after using the toilet and before eating",
-      "Drink safe, treated, or boiled water",
-      "Ensure food is cooked and handled hygienically"
+      "Wash hands with soap frequently",
+      "Drink only safe or treated water",
+      "Ensure proper disposal of human waste"
     ],
     "urgency": "high",
-    "urgency_reason": "Rapid dehydration and bloodstream infections can be life-threatening, especially for children."
+    "urgency_reason": "Rapid blood and fluid loss can lead to shock and death, especially in small children."
   },
   {
-    "name": "Rift Valley Fever (RVF)",
-    "symptoms": ["fever", "weakness", "back pain", "dizziness", "extreme sensitivity to light"],
-    "description": "A viral zoonosis that primarily affects animals but can also infect humans.",
-    "spreads": "Contact with blood or organs of infected animals; occasionally through mosquito bites.",
+    "name": "Rift Valley Fever",
+    "symptoms": ["Sudden fever", "Headache", "Muscle pain", "Neck stiffness", "Sensitivity to light", "Loss of appetite", "Vomiting", "Blurred or decreased vision", "Eye pain", "Bloody stool", "Bleeding from gums/nose", "Jaundice", "Confusion", "Seizures", "Coma"],
+    "differentiating_symptoms": ["Sudden vision loss", "Bleeding from multiple body openings", "History of handling sick livestock"],
+    "similar_to": ["Meningitis", "Dengue Fever", "Ebola"],
+    "description": "A viral zoonotic disease that primarily affects animals but can also infect humans.",
+    "spreads": "Contact with blood or organs of infected animals; mosquito bites.",
     "prevention": [
-      "Wear gloves and protective gear when handling sick animals",
-      "Avoid consuming raw milk or undercooked meat from livestock",
-      "Use mosquito nets and repellent"
+      "Wear protective gear when handling livestock or animal tissue",
+      "Avoid consuming raw milk or meat",
+      "Use mosquito repellents and nets"
     ],
     "urgency": "high",
-    "urgency_reason": "A small percentage of cases develop into severe disease involving eye lesions, encephalitis, or hemorrhagic fever."
-  },
-  {
-    "name": "Sickle Cell Crisis",
-    "symptoms": ["severe pain in bones/joints", "shortness of breath", "extreme fatigue", "pale skin"],
-    "description": "A painful episode that occurs when sickle-shaped red blood cells block blood flow to organs.",
-    "spreads": "Genetic; inherited from parents. Not infectious.",
-    "prevention": [
-      "Stay hydrated and avoid extreme temperatures",
-      "Attend regular medical checkups and take prescribed folic acid",
-      "Prevent infections through vaccination and hygiene"
-    ],
-    "urgency": "high",
-    "urgency_reason": "Can lead to organ damage, stroke, or severe anemia requiring urgent blood transfusion."
+    "urgency_reason": "A small percentage develop ocular disease, encephalitis, or fatal hemorrhagic fever."
   },
   {
     "name": "Severe Malnutrition",
-    "symptoms": ["swollen legs/belly (edema)", "extreme thinness", "dry skin", "thinning hair", "lethargy", "irritability"],
-    "description": "A condition where the body does not get enough nutrients to function, often seen as Marasmus or Kwashiorkor.",
-    "spreads": "Not infectious; caused by inadequate diet or repeated infections.",
+    "symptoms": ["Swollen belly (edema)", "Wasted muscles", "Extremely thin arms/legs", "Brittle, reddish hair", "Flaky skin rash", "Irritability", "Lethargy", "Sunken eyes", "Persistent diarrhea", "Growth failure", "Frequent infections", "Cold hands and feet", "Anemia", "Old man appearance", "Loss of appetite"],
+    "differentiating_symptoms": ["Pot-belly with thin limbs (Kwashiorkor)", "Skin changes (flaky paint dermatosis)", "Baggy pants skin"],
+    "similar_to": ["HIV/AIDS", "Chronic Tuberculosis", "Worm Infestations"],
+    "description": "A deficiency of protein, energy, and micronutrients, commonly presenting as Kwashiorkor or Marasmus.",
+    "spreads": "Not contagious; caused by inadequate food intake or poor absorption.",
     "prevention": [
-      "Exclusive breastfeeding for the first 6 months",
-      "Diverse diet including proteins, vitamins, and minerals",
-      "Regular growth monitoring and deworming for children"
+      "Promote exclusive breastfeeding for 6 months",
+      "Provide a varied diet rich in proteins and vitamins",
+      "Regular deworming of children"
     ],
     "urgency": "high",
-    "urgency_reason": "Weakens the immune system making common infections fatal; can cause permanent physical and mental stunting."
+    "urgency_reason": "Severely malnourished children are at very high risk of death from minor infections or heart failure."
   },
   {
-    "name": "Hypertension Crisis",
-    "symptoms": ["severe chest pain", "severe headache", "confusion", "blurred vision", "nausea", "shortness of breath"],
-    "description": "A severe increase in blood pressure that can lead to a stroke or heart attack.",
-    "spreads": "Non-communicable; related to genetics and lifestyle.",
+    "name": "Sickle Cell Disease",
+    "symptoms": ["Severe bone/joint pain", "Fatigue", "Jaundice", "Swollen hands and feet", "Frequent infections", "Delayed growth", "Vision problems", "Shortness of breath", "Pale skin", "Rapid heart rate", "Enlarged spleen", "Chest pain", "Painful erections", "Stroke-like symptoms", "Leg ulcers"],
+    "differentiating_symptoms": ["Painful swelling of hands and feet (dactylitis)", "Recurrent pain crises", "Pale mucosa"],
+    "similar_to": ["Rheumatism", "Malaria", "Leukemia"],
+    "description": "An inherited red blood cell disorder where cells become C-shaped and block blood flow.",
+    "spreads": "Genetic; inherited from both parents carrying the trait.",
     "prevention": [
-      "Reduce salt intake",
-      "Regular exercise and maintaining a healthy weight",
-      "Take prescribed blood pressure medication consistently"
+      "Seek genetic counseling before having children",
+      "Early screening of newborns",
+      "Daily folic acid and prophylactic antibiotics as prescribed"
     ],
-    "urgency": "critical",
-    "urgency_reason": "Can cause immediate organ failure, stroke, or heart attack. Requires emergency medical care."
+    "urgency": "medium-high",
+    "urgency_reason": "A 'sickle cell crisis' can lead to organ damage, stroke, or severe infection requiring hospitalization."
+  },
+  {
+    "name": "Hypertension",
+    "symptoms": ["Severe headache", "Nosebleeds", "Fatigue", "Confusion", "Vision problems (blurred)", "Chest pain", "Difficulty breathing", "Irregular heartbeat", "Blood in urine", "Pounding in neck/ears", "Dizziness", "Anxiety", "Nausea", "Sleepiness", "Tinnitus"],
+    "differentiating_symptoms": ["High blood pressure readings", "Pounding sensation in the chest or head", "Silent progression"],
+    "similar_to": ["Anxiety disorder", "Migraine", "Kidney Disease"],
+    "description": "A chronic condition where the force of the blood against the artery walls is too high.",
+    "spreads": "Not contagious; caused by lifestyle factors, diet, and genetics.",
+    "prevention": [
+      "Reduce salt intake in diet",
+      "Exercise regularly for 30 minutes a day",
+      "Maintain a healthy body weight"
+    ],
+    "urgency": "medium",
+    "urgency_reason": "Often called the 'silent killer' because it can lead to sudden heart attack or stroke without warning."
   },
   {
     "name": "Snake Bite",
-    "symptoms": ["puncture marks", "severe pain/swelling", "bleeding", "blurred vision", "difficulty breathing"],
-    "description": "An injury caused by a bite from a snake, which may or may not involve venom (envenomation).",
-    "spreads": "Direct contact with a snake.",
+    "symptoms": ["Puncture marks", "Intense local pain", "Swelling", "Bruising", "Rapid heart rate", "Weakness", "Blurred vision", "Difficulty breathing", "Numbness or tingling", "Excessive sweating", "Metallic taste in mouth", "Drooping eyelids", "Muscle paralysis", "Convulsions", "Low blood pressure"],
+    "differentiating_symptoms": ["Visible fang marks", "Rapid swelling and discoloration", "Sudden drooping of eyelids (ptosis)"],
+    "similar_to": ["Allergic reaction", "Scorpion sting", "Spider bite"],
+    "description": "An injury caused by a bite from a snake, which may or may not inject venom.",
+    "spreads": "Physical bite from a snake.",
     "prevention": [
-      "Wear boots and long trousers when walking in tall grass",
-      "Use a torch at night",
-      "Keep homes and compounds clear of debris and rodents"
+      "Wear boots and long pants in tall grass",
+      "Use a flashlight when walking outdoors at night",
+      "Clear bushes and tall grass from around the house"
     ],
-    "urgency": "critical",
-    "urgency_reason": "Venom can cause rapid paralysis, tissue death, or internal bleeding. Seek antivenom immediately."
+    "urgency": "extreme",
+    "urgency_reason": "Venom can cause respiratory arrest, bleeding disorders, or tissue death within minutes."
   },
   {
     "name": "COVID-19",
-    "symptoms": ["fever", "dry cough", "fatigue", "loss of taste or smell", "difficulty breathing"],
-    "description": "An infectious disease caused by the SARS-CoV-2 virus.",
-    "spreads": "Respiratory droplets and small particles when an infected person coughs, sneezes, or talks.",
+    "symptoms": ["Fever", "Dry cough", "Shortness of breath", "Loss of taste/smell", "Fatigue", "Sore throat", "Headache", "Muscle aches", "Runny nose", "Nausea", "Diarrhea", "Chills", "Discolored toes/fingers", "Confusion", "Chest pressure"],
+    "differentiating_symptoms": ["Sudden loss of sense of smell/taste", "Dry, persistent cough", "Low oxygen levels"],
+    "similar_to": ["Influenza (Flu)", "Pneumonia", "Common Cold"],
+    "description": "An infectious respiratory disease caused by the SARS-CoV-2 virus.",
+    "spreads": "Respiratory droplets and aerosols through coughing, sneezing, or talking.",
     "prevention": [
-      "Get vaccinated and boosted",
-      "Wear a mask in crowded indoor spaces",
-      "Maintain social distancing and wash hands frequently"
+      "Get vaccinated and keep up with boosters",
+      "Wear a mask in crowded or poorly ventilated areas",
+      "Wash hands frequently with soap and water"
     ],
-    "urgency": "high",
-    "urgency_reason": "Can cause severe respiratory distress and long-term health complications."
+    "urgency": "medium-high",
+    "urgency_reason": "Can cause severe pneumonia and systemic organ failure, requiring hospitalization."
   },
   {
     "name": "Ringworm",
-    "symptoms": ["scaly ring-shaped rash", "itching", "redness", "hair loss on the scalp"],
-    "description": "A common fungal skin infection; it is not actually caused by a worm.",
-    "spreads": "Skin-to-skin contact with an infected person or animal, or touching contaminated objects.",
+    "symptoms": ["Ring-shaped itchy patch", "Scaly skin", "Redness", "Clear center in the ring", "Overlapping rings", "Raised borders", "Bald patches on scalp", "Brittle hair", "Thickened/discolored nails", "Blisters", "Burning sensation", "Skin inflammation", "Peeling skin", "Red bumps", "Spreading rash"],
+    "differentiating_symptoms": ["Circular, red, ring-like pattern", "Well-defined itchy borders", "Hair loss in specific circles"],
+    "similar_to": ["Eczema", "Psoriasis", "Nummular Dermatitis"],
+    "description": "A common fungal skin infection, not actually caused by a worm.",
+    "spreads": "Skin-to-skin contact, contact with animals, or sharing items like towels and combs.",
     "prevention": [
       "Keep skin clean and dry",
-      "Avoid sharing towels, clothing, or hairbrushes",
-      "Wear shoes in public locker rooms or showers"
+      "Don't share personal items like hairbrushes or towels",
+      "Wear shoes in public locker rooms and showers"
     ],
     "urgency": "low",
-    "urgency_reason": "Uncomfortable and contagious, but rarely dangerous to overall health."
+    "urgency_reason": "Not life-threatening but highly contagious and requires treatment to stop it from spreading."
   },
   {
     "name": "Scabies",
-    "symptoms": ["intense itching (worse at night)", "pimple-like skin rash", "tiny burrows on the skin"],
+    "symptoms": ["Intense itching", "Itching worse at night", "Thin, wavy burrow tracks", "Tiny blisters", "Small red bumps", "Rash between fingers", "Rash in armpits", "Rash around waist", "Rash on wrists", "Rash on elbows", "Crusty sores (from scratching)", "Thickened skin", "Genital itching", "Shoulder blade itching", "Irritability"],
+    "differentiating_symptoms": ["Itching that becomes unbearable at night", "Mite burrows between fingers/toes", "Rash in skin folds"],
+    "similar_to": ["Eczema", "Bed bug bites", "Allergic reaction"],
     "description": "An itchy skin condition caused by a tiny burrowing mite called Sarcoptes scabiei.",
-    "spreads": "Direct, prolonged, skin-to-skin contact with an infected person.",
+    "spreads": "Prolonged skin-to-skin contact; sharing bedding or clothing.",
     "prevention": [
-      "Avoid direct contact with infected individuals",
-      "Wash bedding and clothing of infected persons in hot water",
-      "Treat all household members simultaneously if one person is infected"
-    ],
-    "urgency": "medium",
-    "urgency_reason": "Intense scratching can lead to secondary bacterial skin infections like impetigo."
-  },
-  {
-    "name": "Conjunctivitis (Pink Eye)",
-    "symptoms": ["redness in the white of the eye", "increased tearing", "yellow/green discharge", "itchy eyes"],
-    "description": "Inflammation or infection of the transparent membrane that lines the eyelid and covers the eyeball.",
-    "spreads": "Direct contact with eye secretions or contaminated hands/surfaces.",
-    "prevention": [
-      "Wash hands frequently",
-      "Avoid touching or rubbing the eyes",
-      "Do not share towels or eye makeup"
+      "Wash clothes and bedding in hot water",
+      "Avoid close contact with infected persons",
+      "Treat all household members at the same time"
     ],
     "urgency": "low",
-    "urgency_reason": "Highly contagious but usually resolves without permanent eye damage if managed."
+    "urgency_reason": "Extremely contagious and uncomfortable, leading to secondary skin infections if untreated."
   },
   {
-    "name": "Whooping Cough (Pertussis)",
-    "symptoms": ["severe coughing fits", "high-pitched 'whoop' sound on inhalation", "vomiting after coughing", "exhaustion"],
-    "description": "A highly contagious respiratory tract infection caused by bacteria.",
-    "spreads": "Respiratory droplets from coughing or sneezing.",
+    "name": "Conjunctivitis",
+    "symptoms": ["Redness in white of eye", "Itching", "Gritty feeling", "Yellow discharge", "Green discharge", "Eyelid crusting in morning", "Tearing", "Swelling of eyelids", "Sensitivity to light", "Blurred vision", "Burning sensation", "Foreign body sensation", "Eye soreness", "Swollen lymph nodes by ear", "Watery eyes"],
+    "differentiating_symptoms": ["Eyelids glued shut in the morning", "Pink/Red color in the whites of eyes", "Pus-like discharge"],
+    "similar_to": ["Eye allergy", "Corneal abrasion", "Uveitis"],
+    "description": "Inflammation or infection of the outer membrane of the eyeball and the inner eyelid (Pink Eye).",
+    "spreads": "Direct contact with infected eye secretions or contaminated hands/surfaces.",
     "prevention": [
-      "Vaccinate infants with the DTP/Pentavalent vaccine",
-      "Ensure boosters for older children and adults",
-      "Keep infected persons away from infants"
+      "Wash hands frequently with soap",
+      "Avoid touching or rubbing the eyes",
+      "Don't share towels, pillows, or eye makeup"
+    ],
+    "urgency": "medium",
+    "urgency_reason": "Highly contagious and can cause corneal damage if the cause is bacterial and untreated."
+  },
+  {
+    "name": "Whooping Cough",
+    "symptoms": ["High-pitched 'whoop' sound", "Severe coughing fits", "Vomiting after coughing", "Extreme exhaustion", "Runny nose", "Low-grade fever", "Mild cough (early)", "Blue skin/nails (cyanosis)", "Breathing pauses (apnea)", "Watery eyes", "Sneezing", "Red face during cough", "Thick phlegm", "Rib fractures from coughing", "Hernias"],
+    "differentiating_symptoms": ["The distinctive 'whoop' during inhalation", "Vomiting caused by coughing", "Coughing fits that lead to turning blue"],
+    "similar_to": ["Asthma", "Pneumonia", "Bronchitis"],
+    "description": "Pertussis, a highly contagious respiratory tract infection characterized by a severe hacking cough.",
+    "spreads": "Respiratory droplets when an infected person coughs or sneezes.",
+    "prevention": [
+      "Get the DTaP/Tdap vaccination and boosters",
+      "Keep infants away from people with a cough",
+      "Prophylactic antibiotics for exposed family members"
     ],
     "urgency": "high",
-    "urgency_reason": "Can be life-threatening for infants who may stop breathing (apnea) during coughing spells."
+    "urgency_reason": "Can be life-threatening for infants who may stop breathing during coughing fits."
   }
 ]
